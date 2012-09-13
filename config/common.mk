@@ -176,7 +176,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Don't grab all the languages for LatinIME
+#PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Only grab EN dictionary
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries/packages/inputmethods/LatinIME/java/res/raw/main_en.dict
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 10
