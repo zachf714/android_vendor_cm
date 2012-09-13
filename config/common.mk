@@ -221,7 +221,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(CM_VERSION)
 
 # Goo Manager support
-PRODUCT_PROPERTY_OVERRIDES += \
 ifeq ($(CM_BUILDTYPE),PONS)
     PRODUCT_PROPERTY_OVERRIDES += \
       ro.goo.developerid=PonsAsinorem \
