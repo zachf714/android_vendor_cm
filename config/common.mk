@@ -224,6 +224,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ifeq ($(CM_BUILDTYPE),PONS)
     PRODUCT_PROPERTY_OVERRIDES += \
       ro.goo.developerid=PonsAsinorem \
-      ro.goo.rom=$(PRODUCT_VERSION_MAJOR)-$(CM_BUILDTYPE)-$(CM_BUILD) \
+      ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
       ro.goo.version=$(shell date +%s)
 endif
