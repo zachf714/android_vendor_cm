@@ -136,15 +136,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder
 #    VideoEditor \
-#    Basic \
-#    HoloSpiralWallpaper \
-#    MagicSmokeWallpapers \
-#    NoiseField \
-#    Galaxy4 \
-#    LiveWallpapers \
-#    LiveWallpapersPicker \
-#    VisualizationWallpapers \
-#    PhaseBeam
+#    Basic
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
