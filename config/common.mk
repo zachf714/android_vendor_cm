@@ -203,7 +203,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := PONS
+    CM_BUILDTYPE := UNOFFICIAL
     CM_EXTRAVERSION :=
 endif
 
@@ -216,11 +216,3 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION)
-
-# Goo Manager support
-ifeq ($(CM_BUILDTYPE),PONS)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=PonsAsinorem \
-      ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
-      ro.goo.version=$(shell date +%s)
-endif
