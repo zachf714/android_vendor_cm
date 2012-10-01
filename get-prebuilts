@@ -7,3 +7,5 @@ mkdir -p $BASEDIR/proprietary
 #curl -L -o $BASEDIR/proprietary/Term.apk -O -L https://github.com/downloads/jackpal/Android-Terminal-Emulator/Term.apk
 #unzip -o -d $BASEDIR/proprietary $BASEDIR/proprietary/Term.apk lib/armeabi/libjackpal-androidterm4.so
 
+# Get Goo Manager		
+curl -L -o $BASEDIR/proprietary/GooManager.apk -O -L http://goo.im/devs/s0updev/goomanager/GooManager_2.1.2.apk
