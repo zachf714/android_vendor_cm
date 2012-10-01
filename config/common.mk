@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh
 
 #PRODUCT_COPY_FILES +=  \
-#    vendor/cm/proprietary/RomManager.apk:system/app/RomManager.apk \
 #    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
 #    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
@@ -131,7 +130,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VideoEditor \
     VoiceDialer \
     SoundRecorder
 #    VideoEditor \
@@ -139,12 +137,13 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Trebuchet
+    Trebuchet \
+    CMUpdater
 #    DSPManager \
 #    libcyanogen-dsp \
 #    audio_effects.conf \
 #    CMWallpapers \
-#    Apollo
+#    Apollo \
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
