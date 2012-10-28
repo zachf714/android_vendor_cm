@@ -133,8 +133,11 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoiceDialer \
-    SoundRecorder
+# Optional CM packages
+PRODUCT_PACKAGES += \
+    LiveWallpapersPicker \
+    SoundRecorder \
+    VoiceDialer
 #    VideoEditor \
 #    Basic
 
