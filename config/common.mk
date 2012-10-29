@@ -133,8 +133,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-# Optional CM packages
-PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     SoundRecorder \
     VoiceDialer
@@ -144,11 +142,11 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Apollo \
-    Trebuchet
-#   DSPManager \
-#    libcyanogen-dsp
+    audio_effects.conf \
+    DSPManager \
+    Trebuchet \
+    libcyanogen-dsp
 #    CMUpdater
-#    audio_effects.conf \
 #    CMWallpapers \
 
 # Extra tools in CM
