@@ -143,9 +143,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Apollo \
     audio_effects.conf \
+    CMFileManager \
     DSPManager \
+    libcyanogen-dsp \
     Trebuchet \
-    libcyanogen-dsp
 #    CMUpdater
 #    CMWallpapers \
 
