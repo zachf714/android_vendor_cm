@@ -100,7 +100,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh
 
 PRODUCT_COPY_FILES += \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk
+    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+    vendor/cm/proprietary/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk
 
 # Copy JNI libarary of Term
 ifeq ($(TARGET_ARCH),arm)
