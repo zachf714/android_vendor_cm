@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     SwagPapers \
     Apollo \
+    LockClock \
     CMFileManager
 
 # Extra tools in CM
