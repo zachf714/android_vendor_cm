@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
     SwagPapers \
     Apollo \
     LockClock \
+    HoloLauncherHD \
     CMFileManager
 
 # Extra tools in CM
