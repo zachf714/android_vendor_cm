@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
+    SwagPapers \
     Apollo \
     CMFileManager
 
