@@ -104,20 +104,9 @@ PRODUCT_COPY_FILES += \
     vendor/cm/proprietary/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk
 
 # Copy JNI libarary of Term
-ifeq ($(TARGET_ARCH),arm)
 PRODUCT_COPY_FILES +=  \
+    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-endif
-
-ifeq ($(TARGET_ARCH),mips)
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/lib/mips/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-endif
-
-ifeq ($(TARGET_ARCH),x86)
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/lib/x86/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-endif
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
