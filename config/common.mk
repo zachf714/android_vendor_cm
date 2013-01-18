@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     SwagPapers \
+    ParanoidWallpapers \
     Apollo \
     LockClock \
     HoloLauncherHD \
