@@ -103,18 +103,11 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
-# Nam configuration script
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh
-
-PRODUCT_COPY_FILES += \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk
-
 # Copy JNI libarary of Term
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+    vendor/cm/proprietary/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -141,7 +134,6 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    SpareParts \
     Superuser \
     su
 
