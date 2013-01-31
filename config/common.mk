@@ -99,6 +99,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# Use SuperSU instead
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xbin/su:system/xbin/su \
+    vendor/cm/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
@@ -139,8 +144,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    Superuser \
-    su
+    SuperSU
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
