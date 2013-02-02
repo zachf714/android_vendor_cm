@@ -64,20 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
-    ro.media.enc.jpeg.quality=100 \
-    debug.sf.hw=1 \
-    debug.performance.tuning=1 \
-    video.accelerate.hw=1 \
-    ro.HOME_APP_ADJ=1 \
-    ro.media.dec.jpeg.memcap=8000000 \
-    ro.media.enc.hprof.vid.bps=8000000 \
-    ro.media.enc.hprof.vid.fps=65 \
-    ro.media.enc.jpeg.quality=100 \
-    debug.composition.type=gpu \
-    ro.telephony.call_ring.delay=500 \
-    ro.lge.proximity.delay=25 \
-    mot.proximity.delay=25
+    ro.com.android.dataroaming=false
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
