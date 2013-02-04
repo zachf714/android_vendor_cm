@@ -70,6 +70,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/$(TARGET_PRODUCT).conf:system/etc/beerbong/properties.conf
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
