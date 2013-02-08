@@ -66,10 +66,33 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+# Build.Prop Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+    mot.proximity.delay=20 \
+    movfilter=40 \
+    per_sec=300 \
+    persist.service.swiqi.enable=1 \
+    persist.service.xloud.enable=1 \
+    pm.sleep_mode=1 \
+    ro.HOME_APP_ADJ=1 \
+    ro.HOME_APP_MEM=8192 \
+    ro.FOREGROUND_APP_MEM=8192 \
+    ro.kernel.android.checkjni=0 \
+    ro.kernel.checkjni=0 \
+    ro.media.enc.hprof.vid.bps=8000000 \
+    ro.media.enc.hprof.vid.fps=65 \
+    ro.media.dec.jpeg.memcap=8000000 \
+    ro.media.enc.jpeg.quality=100 \
+    ro.mot.eri.losalert.delay=600 \
+    ro.semc.xloud.supported=true \
+    ro.semc.sound_effects_enabled=true \
+    ro.service.swiqi.supported=true \
+    ro.VISIBLE_APP_MEM=8192 \
+    video.accelerate.hw=1 \
+    windowsmgr.max_events_per_sec=280
 
+
+#
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/$(TARGET_PRODUCT).conf:system/etc/beerbong/properties.conf
 
