@@ -92,6 +92,9 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xbin/su:system/xbin/su \
     vendor/cm/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk
 
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/apk/LMT_v1.91.apk:system/app/LMT_v1.91.apk
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
