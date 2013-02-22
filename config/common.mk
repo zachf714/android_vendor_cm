@@ -92,8 +92,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xbin/su:system/xbin/su \
     vendor/cm/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk
 
+# Misc apps added by scotthartbti
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/apk/LMT_v1.91.apk:system/app/LMT_v1.91.apk
+    vendor/cm/prebuilt/common/apk/LMT_v1.91.apk:system/app/LMT_v1.91.apk \
+    vendor/cm/prebuilt/common/apk/Music.apk:system/app/Music.apk
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
