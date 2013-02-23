@@ -94,7 +94,6 @@ PRODUCT_COPY_FILES += \
 
 # Misc apps added by scotthartbti
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/apk/LMT_v1.91.apk:system/app/LMT_v1.91.apk \
     vendor/cm/prebuilt/common/apk/Music.apk:system/app/Music.apk
 
 # CM-specific init file
