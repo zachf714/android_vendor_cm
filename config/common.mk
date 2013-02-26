@@ -65,7 +65,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    persist.sys.purgeable_assets=1 \
     pm.sleep_mode=1
 
 # Enable ADB authentication
@@ -90,7 +89,8 @@ PRODUCT_COPY_FILES += \
 # Use SuperSU instead
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xbin/su:system/xbin/su \
-    vendor/cm/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk
+    vendor/cm/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su \
+    vendor/cm/prebuilt/common/apk/Superuser.apk:system/app/Superuser.apk
 
 # Misc apps added by scotthartbti
 PRODUCT_COPY_FILES += \
