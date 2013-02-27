@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
     BeanStalkPapers \
     ParanoidWallpapers \
     Apollo \
+    LockClock \
     DashClock \
     HoloLauncherHD \
     CMFileManager
