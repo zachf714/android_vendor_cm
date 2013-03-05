@@ -1,7 +1,6 @@
 PRODUCT_BRAND ?= cyanogenmod
 
 SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.liquid.superuser
 
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
@@ -137,10 +136,7 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    LatinIME \
-    Superuser \
-    su \
-    Widgets
+    LatinIME
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
