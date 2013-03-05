@@ -1,6 +1,7 @@
 PRODUCT_BRAND ?= cyanogenmod
 
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.liquid.superuser
 
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
@@ -88,12 +89,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# Use SuperSU instead
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/xbin/su:system/xbin/su \
-    vendor/cm/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su \
-    vendor/cm/prebuilt/common/apk/Superuser.apk:system/app/Superuser.apk
-
 # Misc apps added by scotthartbti
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/apk/Music.apk:system/app/Music.apk
@@ -143,7 +138,9 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    SuperSU
+    Superuser \
+    su \
+    Widgets
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
