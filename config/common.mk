@@ -89,10 +89,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# Misc apps added by scotthartbti
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/apk/Music.apk:system/app/Music.apk
-
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
