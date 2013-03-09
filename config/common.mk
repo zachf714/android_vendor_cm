@@ -102,8 +102,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
-    vendor/cm/proprietary/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk \
-    vendor/cm/proprietary/ATweakerFree.apk:system/app/ATweakerFree.apk
+    vendor/cm/prebuilt/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk \
+    vendor/cm/prebuilt/ATweakerFree.apk:system/app/ATweakerFree.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
