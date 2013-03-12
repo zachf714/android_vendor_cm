@@ -218,7 +218,9 @@ else
     CM_EXTRAVERSION :=
 endif
 
-CM_VERSION := BeanStalk-$(shell date -u +%Y%m%d)-$(CM_BUILD)$(CM_EXTRAVERSION)
+Bean_Version=1.160
+
+CM_VERSION := BeanStalk$(Bean_Version)-$(shell date -u +%Y%m%d)-$(CM_BUILD)$(CM_EXTRAVERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
