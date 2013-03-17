@@ -3,6 +3,7 @@ $(call inherit-product, vendor/cm/config/common.mk)
 
 # Bring in all audio files
 include frameworks/base/data/sounds/NewAudio.mk
+include frameworks/base/data/sounds/AudioPackage10.mk
 
 # Extra Ringtones
 include frameworks/base/data/sounds/AudioPackageNewWave.mk
