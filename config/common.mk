@@ -71,7 +71,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1
 
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -158,7 +158,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     HoloLauncherHD \
-    CMFileManager
+    CMFileManager \
+    GooUpdater
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
