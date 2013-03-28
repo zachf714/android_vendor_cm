@@ -158,8 +158,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     HoloLauncherHD \
-    CMFileManager \
-    GooUpdater
+    CMFileManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
