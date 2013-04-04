@@ -107,6 +107,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/ATweakerFree.apk:system/app/ATweakerFree.apk \
     vendor/cm/prebuilt/XposedDPI.apk:system/app/XposedDPI.apk \
     vendor/cm/prebuilt/GooManager.apk:system/app/GooManager.apk \
+    vendor/cm/prebuilt/SpeakerBoost.apk:system/app/SpeakerBoost.apk \
     vendor/cm/prebuilt/XposedInstaller.apk:system/app/XposedInstaller.apk
 
 # Bring in camera effects
