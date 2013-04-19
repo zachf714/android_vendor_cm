@@ -72,7 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
 
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
