@@ -181,7 +181,7 @@ PRODUCT_PACKAGES += \
     DashClock \
     mGerrit \
     HoloLauncherHD \
-    CMFileManager
+    StalkExplorer
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
