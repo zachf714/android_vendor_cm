@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     LockClock \
     DashClock \
-    mGerrit \
     HoloLauncherHD \
     StalkExplorer
 
