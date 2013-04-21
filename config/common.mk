@@ -172,10 +172,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
-    SwagPapers \
     BeanStalkPapers \
-    ParanoidWallpapers \
     Apollo \
     LockClock \
     DashClock \
