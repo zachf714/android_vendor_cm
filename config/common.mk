@@ -71,9 +71,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1 \
     persist.sys.root_access=3
 
-# Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
