@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     BeanStalkPapers \
     Apollo \
+    PermissionsManager \
     LockClock \
     DashClock \
     HoloLauncherHD \
