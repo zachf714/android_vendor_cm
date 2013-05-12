@@ -123,6 +123,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/ATweakerFree.apk:system/app/ATweakerFree.apk \
     vendor/cm/prebuilt/XposedDPI.apk:system/app/XposedDPI.apk \
     vendor/cm/prebuilt/GooManager.apk:system/app/GooManager.apk \
+    vendor/cm/prebuilt/Nova.apk:system/app/Nova.apk \
     vendor/cm/prebuilt/XposedInstaller.apk:system/app/XposedInstaller.apk
 
 # Bring in camera effects
