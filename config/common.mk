@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/01stalk:system/etc/init.d/01stalk \
     vendor/cm/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/cm/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh
 
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
