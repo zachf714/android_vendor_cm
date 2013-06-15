@@ -113,10 +113,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
-# Audio Config for DSPManager
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf 
-
 # Copy JNI libarary of Term
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
