@@ -83,7 +83,11 @@ PRODUCT_COPY_FILES += \
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/cm/prebuilt/common/xbin/CB_RunHaveged:system/xbin/CB_RunHaveged \
+    vendor/cm/prebuilt/common/xbin/haveged:system/xbin/haveged \
+    vendor/cm/prebuilt/common/xbin/vanirentropy:system/xbin/vanirentropy \
+    vendor/cm/prebuilt/common/etc/init.d/06ENTROPY:system/etc/init.d/06ENTROPY
 
 # userinit support
 PRODUCT_COPY_FILES += \
