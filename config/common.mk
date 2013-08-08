@@ -3,6 +3,14 @@ PRODUCT_BRAND ?= cyanogenmod
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
+# Enable root for adb+apps
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
+
+# Superuser
+PRODUCT_PACKAGES += \
+    su
+
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
@@ -70,8 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     pm.sleep_mode=0 \
     ro.ril.disable.power.collapse=0 \
-    ro.vold.umsdirtyratio=20 \
-    persist.sys.root_access=3
+    ro.vold.umsdirtyratio=20
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
