@@ -1,15 +1,8 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+-include vendor/cm-priv/keys.mk
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-
-# Enable root for adb+apps
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
-
-# Superuser
-PRODUCT_PACKAGES += \
-    su
 
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
@@ -152,7 +145,9 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Focal \
     Development \
-    LatinIME
+    LatinIME \
+    Superuser \
+    su
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
