@@ -8,9 +8,6 @@ include frameworks/base/data/sounds/AudioPackage10.mk
 # Extra Ringtones
 include frameworks/base/data/sounds/AudioPackageNewWave.mk
 
-# Bring in all video files
-$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
-
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 
