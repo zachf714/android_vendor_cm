@@ -171,6 +171,11 @@ PRODUCT_PACKAGES += \
     HoloLauncherHD \
     StalkExplorer
 
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
