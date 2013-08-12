@@ -244,7 +244,7 @@ else
 endif
 
 Bean_Version=4.3.00
-CM_VERSION := BeanStalk$(Bean_Version)-$(shell date -u +%Y%m%d)-$(CM_BUILD)$(CM_EXTRAVERSION)
+CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)-$(CM_BUILD)$(CM_EXTRAVERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
