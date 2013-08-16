@@ -90,7 +90,25 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/cm/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf \
+    vendor/cm/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/cm/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/cm/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/cm/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/cm/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/cm/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/cm/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/cm/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/cm/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/cm/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/cm/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
+    vendor/cm/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/cm/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
+
+# Added xbin files
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xbin/zip:system/xbin/zip \
+    vendor/cm/prebuilt/common/xbin/zipalign:system/xbin/zipalign
 
 # userinit support
 PRODUCT_COPY_FILES += \
