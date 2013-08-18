@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     Focal \
     Development \
     LatinIME \
+    HALO \
     Superuser \
     su
 
