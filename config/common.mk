@@ -171,7 +171,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     HoloLauncherHD \
-    StalkExplorer
+    StalkExplorer \
+    CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
