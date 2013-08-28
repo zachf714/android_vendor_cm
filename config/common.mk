@@ -170,8 +170,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     DashClock \
     HoloLauncherHD \
-    StalkExplorer \
-    CMAccount
+    StalkExplorer
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
