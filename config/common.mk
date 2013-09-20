@@ -146,6 +146,7 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Focal \
     Development \
+    BluetoothExt \
     LatinIME \
     HALO \
     Superuser \
