@@ -270,7 +270,10 @@ CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSIO
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
-
+  ro.modversion=$(CM_VERSION) \
+  ro.goo.developerid=beanstalk \
+  ro.goo.rom=$(CM_BUILD) \
+  ro.goo.version=$(Bean_Version)
+  
 -include vendor/cm/sepolicy/sepolicy.mk
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
