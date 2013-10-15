@@ -265,7 +265,7 @@ else
     CM_EXTRAVERSION :=
 endif
 
-Bean_Version=4.3.1001
+Bean_Version=4.3.1009
 CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
