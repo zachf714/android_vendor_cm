@@ -93,7 +93,9 @@ endif
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/cm/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
 # userinit support
 PRODUCT_COPY_FILES += \
