@@ -140,7 +140,6 @@ PRODUCT_COPY_FILES += \
 
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
     vendor/cm/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 # T-Mobile theme engine
