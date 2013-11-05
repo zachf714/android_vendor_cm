@@ -270,8 +270,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=beanstalk \
   ro.goo.rom=$(CM_BUILD) \
   ro.goo.version=3
-  
--include vendor/cm/sepolicy/sepolicy.mk
 
 -include vendor/cm-priv/keys/keys.mk
 
