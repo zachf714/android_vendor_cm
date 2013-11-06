@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
+    Launcher3 \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
@@ -215,8 +215,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 2
+PRODUCT_VERSION_MAJOR = 11
+PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
@@ -261,7 +261,7 @@ else
     CM_EXTRAVERSION :=
 endif
 
-Bean_Version=4.3.1015
+Bean_Version=4.4
 CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
