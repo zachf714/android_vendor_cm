@@ -100,6 +100,19 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
     vendor/cm/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/cm/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/cm/prebuilt/common/etc/init.d/11battery:system/etc/init.d/11battery \
+    vendor/cm/prebuilt/common/etc/init.d/12touch:system/etc/init.d/12touch \
+    vendor/cm/prebuilt/common/etc/init.d/13minfree:system/etc/init.d/13minfree \
+    vendor/cm/prebuilt/common/etc/init.d/14gpurender:system/etc/init.d/14gpurender \
+    vendor/cm/prebuilt/common/etc/init.d/15sleepers:system/etc/init.d/15sleepers \
+    vendor/cm/prebuilt/common/etc/init.d/16journalism:system/etc/init.d/16journalism \
+    vendor/cm/prebuilt/common/etc/init.d/17sqlite3:system/etc/init.d/17sqlite3 \
+    vendor/cm/prebuilt/common/etc/init.d/18wifisleep:system/etc/init.d/18wifisleep \
+    vendor/cm/prebuilt/common/etc/init.d/19iostats:system/etc/init.d/19iostats \
+    vendor/cm/prebuilt/common/etc/init.d/20setrenice:system/etc/init.d/20setrenice \
+    vendor/cm/prebuilt/common/etc/init.d/21tweaks:system/etc/init.d/21tweaks \
+    vendor/cm/prebuilt/common/etc/init.d/24speedy_modified:system/etc/init.d/24speedy_modified \
+    vendor/cm/prebuilt/common/etc/init.d/25loopy_smoothness_tweak:system/etc/init.d/25loopy_smoothness_tweak \
     vendor/cm/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
     vendor/cm/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
     vendor/cm/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
