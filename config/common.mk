@@ -179,6 +179,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LatinIME \
     HALO \
+    ScreenRecorder \
+    libscreenrecorder \
     Superuser \
     su
 
