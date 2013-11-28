@@ -207,6 +207,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
