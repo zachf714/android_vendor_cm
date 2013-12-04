@@ -295,7 +295,7 @@ else
     CM_EXTRAVERSION :=
 endif
 
-Bean_Version=4.4008
+Bean_Version=4.4015
 CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -303,7 +303,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(CM_VERSION) \
   ro.goo.developerid=beanstalk \
   ro.goo.rom=$(CM_BUILD) \
-  ro.goo.version=8
+  ro.goo.version=9
 
 -include vendor/cm-priv/keys/keys.mk
 
