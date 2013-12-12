@@ -185,7 +185,6 @@ PRODUCT_PACKAGES += \
     Development \
     BluetoothExt \
     LatinIME \
-    HALO \
     Superuser \
     su
 
@@ -205,10 +204,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     BeanStalkPapers \
     Apollo \
-    PermissionsManager \
     LockClock \
     DashClock \
-    HoloLauncherHD \
     StalkExplorer
 
 PRODUCT_PACKAGES += \
