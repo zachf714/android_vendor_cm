@@ -187,8 +187,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     HALO \
     Superuser \
-    su \
-    WhisperPush
+    su
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
