@@ -6,8 +6,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
-# Telephony packages
+# SIM Toolkit
 PRODUCT_PACKAGES += \
     Mms \
-    Stk \
-    WhisperPush
+    Stk
