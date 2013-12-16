@@ -194,9 +194,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic \
-    libemoji \
-    CMFota \
-    CMUpdater
+    libemoji
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
