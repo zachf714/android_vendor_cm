@@ -194,7 +194,9 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic \
-    libemoji
+    libemoji \
+    CMFota \
+    CMUpdater
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
@@ -231,7 +233,14 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    procmem \
+    procrank \
+    sqlite3 \
+    strace
 
 # Openssh
 PRODUCT_PACKAGES += \
