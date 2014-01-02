@@ -164,8 +164,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     LockClock \
     Trebuchet \
-#    CMUpdater
-#    CMWallpapers
+#    CMUpdater \
+#    CMWallpapers \
     CMUpdater \
     CMFota \
     CMAccount \
