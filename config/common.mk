@@ -144,12 +144,12 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
+#    CMWallpapers \
     Apollo \
-    CMFileManager \
+#    CMFileManager \
     LockClock \
-    CMUpdater \
-    CMFota \
+#    CMUpdater \
+#    CMFota \
     CMAccount
 
 # CM Hardware Abstraction Framework
@@ -207,9 +207,9 @@ PRODUCT_PACKAGES += \
     su
 
 # Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+#    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
@@ -223,7 +223,7 @@ endif
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+#PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 11
