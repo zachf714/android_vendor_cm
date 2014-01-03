@@ -1,7 +1,7 @@
 CyanogenMod
 ===========
 
-Maintainers (CyanogenMod 10.2):
+Maintainers (CyanogenMod 11.0):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode
@@ -12,11 +12,11 @@ Maintainers (CyanogenMod 10.2):
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
-* __Google Nexus S:__ burnsra, KalimochoAz
+* __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 7:__ burnsra, fattire, nemith (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone, gweedo767
-* __HTC Droid DNA:__ invisiblek
+* __HTC Droid DNA:__ crpalmer, invisiblek
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
@@ -55,8 +55,11 @@ Maintainers (CyanogenMod 10.2):
 * __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
+* __Samsung Galaxy Note 8.0 3G (GT-N5100):__ sbrissen
+* __Samsung Galaxy Note 8.0 Wifi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
 * __Samsung Galaxy Note 10.1 LTE (Verizon) (SCH-I925):__ sbrissen
+* __Samsung Galaxy Premier (GT-I9260):__ ljzyal
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
@@ -103,7 +106,7 @@ Maintainers (CyanogenMod 10.2):
 General developers:
 -------------------
 * __UI Team:__ blunden, prash
-* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, mad-murdock, maniac103, Kaik541
+* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, maniac103, Kaik541
 * __Other:__ jruesga
 
 Translators:

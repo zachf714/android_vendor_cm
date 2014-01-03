@@ -3,23 +3,7 @@ PRODUCT_BRAND ?= cyanogenmod
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
-# To deal with CM9 specifications
-# TODO: remove once all devices have been switched
-ifneq ($(TARGET_BOOTANIMATION_NAME),)
-TARGET_SCREEN_DIMENSIONS := $(subst -, $(space), $(subst x, $(space), $(TARGET_BOOTANIMATION_NAME)))
-ifeq ($(TARGET_SCREEN_WIDTH),)
-TARGET_SCREEN_WIDTH := $(word 2, $(TARGET_SCREEN_DIMENSIONS))
-endif
-ifeq ($(TARGET_SCREEN_HEIGHT),)
-TARGET_SCREEN_HEIGHT := $(word 3, $(TARGET_SCREEN_DIMENSIONS))
-endif
-endif
-
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
-
-# clear TARGET_BOOTANIMATION_NAME in case it was set for CM9 purposes
-TARGET_BOOTANIMATION_NAME :=
-
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
   if [ $(TARGET_SCREEN_WIDTH) -lt $(TARGET_SCREEN_HEIGHT) ]; then \
@@ -146,30 +130,27 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    LiveWallpapersPicker \
     VoicePlus \
     VoiceDialer \
     SoundRecorder \
-    VoiceDialer
-#    VideoEditor \
-#    Basic
+    Basic \
+    libemoji
 
 # Custom CM packages
+    #Trebuchet \
+
 PRODUCT_PACKAGES += \
-    Apollo \
-    audio_effects.conf \
-    CMAccount \
-    CMFileManager \
+    Launcher3 \
     DSPManager \
     libcyanogen-dsp \
+    audio_effects.conf \
+    CMWallpapers \
+    Apollo \
+    CMFileManager \
     LockClock \
-    Trebuchet \
-#    CMUpdater \
-#    CMWallpapers \
     CMUpdater \
     CMFota \
-    CMAccount \
-    WhisperPush
+    CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -216,10 +197,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# Don't grab all the languages for LatinIME
-#PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
-# Only grab EN dictionary
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries/packages/inputmethods/LatinIME/java/res/raw/main_en.dict
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
@@ -246,10 +223,11 @@ endif
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 2
+PRODUCT_VERSION_MAJOR = 11
+PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
@@ -294,6 +272,12 @@ else
     CM_EXTRAVERSION :=
 endif
 
+ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
+    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
+        CM_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+    endif
+endif
+
 ifeq ($(CM_BUILDTYPE), RELEASE)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
         CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
@@ -317,8 +301,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
 
--include vendor/cm/sepolicy/sepolicy.mk
-
 -include vendor/cm-priv/keys/keys.mk
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
+
+-include vendor/cyngn/product.mk
