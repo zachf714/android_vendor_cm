@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
     libscreenrecorder \
     BeanStalkPapers \
     Apollo \
+    MonthCalendarWidget \
     LockClock \
     DashClock \
     StalkExplorer
