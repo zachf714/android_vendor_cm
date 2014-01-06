@@ -205,6 +205,7 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder \
     BeanStalkPapers \
+    SpeakerProximity \
     Apollo \
     MonthCalendarWidget \
     LockClock \
