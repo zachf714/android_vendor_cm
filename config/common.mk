@@ -148,7 +148,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
     vendor/cm/prebuilt/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk \
     vendor/cm/prebuilt/ATweakerFree.apk:system/app/ATweakerFree.apk \
-    vendor/cm/prebuilt/GooManager.apk:system/app/GooManager.apk \
     vendor/cm/prebuilt/Nova.apk:system/app/Nova.apk
 
 # Bring in camera effects
@@ -200,7 +199,7 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder \
     BeanStalkPapers \
-    SpeakerProximity \
+    BeanStalkOTA \
     Apollo \
     MonthCalendarWidget \
     LockClock \
