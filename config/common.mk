@@ -126,10 +126,10 @@ PRODUCT_PACKAGES += \
 # Optional CM packages
 PRODUCT_PACKAGES += \
     VoicePlus \
-    VoiceDialer \
-    SoundRecorder \
-    Basic \
     libemoji
+#    VoiceDialer \
+#    SoundRecorder \
+#    Basic \
 
 # Custom CM packages
     #Trebuchet \
@@ -139,13 +139,13 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-#    CMWallpapers \
-    Apollo \
-#    CMFileManager \
     LockClock \
+#    CMWallpapers \
+#    Apollo \
+#    CMFileManager \
 #    CMUpdater \
 #    CMFota \
-    CMAccount
+#    CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
