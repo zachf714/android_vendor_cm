@@ -62,10 +62,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=0
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
