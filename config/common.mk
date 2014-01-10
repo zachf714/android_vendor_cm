@@ -310,6 +310,7 @@ CM_VERSION := BeanStalk-$(Bean_Version)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSIO
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
+  ro.bs=true \
   ro.goo.developerid=beanstalk \
   ro.goo.rom=$(CM_BUILD) \
   ro.goo.version=12
