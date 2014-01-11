@@ -136,8 +136,8 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf \
-    LockClock 
+    audio_effects.conf 
+#    LockClock 
 #    CMWallpapers \
 #    Apollo \
 #    CMFileManager \
