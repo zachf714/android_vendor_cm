@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
 # Optional CM packages
 PRODUCT_PACKAGES += \
     VoicePlus \
+    Basic \
     libemoji
 #    VoiceDialer \
 #    SoundRecorder \
@@ -157,7 +158,6 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs \
     bash \
-    vim \
     nano \
     htop \
     powertop \
