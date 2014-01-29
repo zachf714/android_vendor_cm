@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
+    libsepol \
     openvpn \
     e2fsck \
     mke2fs \
@@ -213,7 +214,6 @@ endif
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
-#PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 11
@@ -295,8 +295,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
-ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),)
-ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
+ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
+ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
   ifneq ($(CM_BUILDTYPE), UNOFFICIAL)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
       ifneq ($(CM_EXTRAVERSION),)
