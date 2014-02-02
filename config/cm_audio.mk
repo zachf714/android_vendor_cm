@@ -35,3 +35,6 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/Rockin.ogg:system/media/audio/ringtones/Rockin.ogg \
 	$(RINGTONE_PATH)/Silmarillia.ogg:system/media/audio/ringtones/Silmarillia.ogg
 
+# SoundPack
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/media/audio/soundpack/plodeys1.zip:system/media/audio/plodeys.zip
