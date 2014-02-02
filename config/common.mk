@@ -147,7 +147,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
     vendor/cm/prebuilt/hololauncherhd/HoloLauncherHD.apk:system/app/HoloLauncherHD.apk \
-    vendor/cm/prebuilt/ATweakerFree.apk:system/app/ATweakerFree.apk \
     vendor/cm/prebuilt/Nova.apk:system/app/Nova.apk
 
 # Bring in camera effects
