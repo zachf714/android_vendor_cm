@@ -81,7 +81,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
-    persist.sys.root_access=1
+    persist.sys.root_access=1 \
+    persist.sys.dun.override=0
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
