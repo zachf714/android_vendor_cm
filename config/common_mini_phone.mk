@@ -6,9 +6,9 @@ include vendor/cm/config/cm_audio.mk
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Orion.ogg \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.ringtone=Lyon.ogg \
+    ro.config.notification_sound=CyanMessage.ogg \
+    ro.config.alarm_alert=CyanAlarm.ogg
 
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
