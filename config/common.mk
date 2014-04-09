@@ -140,9 +140,9 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Copy JNI libarary of Term
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/appsetting.apk:system/app/appsetting.apk \
-    vendor/cm/prebuilt/xposed_installer.apk:system/app/xposed_installer.apk
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cm/prebuilt/appsetting.apk:system/app/appsetting.apk \
+#    vendor/cm/prebuilt/xposed_installer.apk:system/app/xposed_installer.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -178,11 +178,11 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    VoiceDialer \
     Basic \
     libemoji
 #    SoundRecorder \
+#    VoicePlus \
+#    VoiceDialer \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
